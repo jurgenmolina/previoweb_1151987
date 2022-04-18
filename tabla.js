@@ -29,22 +29,22 @@ if(localStorage.getItem("codigo")==null) {
         contenido.innerHTML = `${data}`
       })
     }
-    // function tabla(datos) {
-  //           // console.log(datos)
-  //           contenido.innerHTML = ''
-  //           for(let valor of datos){
-  //               // console.log(valor.nombre)
-  //               contenido.innerHTML += `
+    function tabla(datos) {
+            // console.log(datos)
+            contenido.innerHTML = ''
+            for(let valor of datos){
+                // console.log(valor.nombre)
+                contenido.innerHTML += `
                 
-  //               <tr>
-  //                   <th scope="row">${ valor.id }</th>
-  //                   <td>${ valor.nombre }</td>
-  //                   <td>${ valor.p1 }</td>
-  //                   <td>${ valor.p2}</td>
-  //                   <td>${ valor.p3 }</td>
-  //                   <td>${ valor.ef }</td>
-  //               </tr>
+                <tr>
+                    <th scope="row">${ valor.id }</th>
+                    <td>${ valor.nombre }</td>
+                    <td>${ valor.p1 }</td>
+                    <td>${ valor.p2}</td>
+                    <td>${ valor.p3 }</td>
+                    <td>${ valor.ef }</td>
+                </tr>
                 
-  //               `
-  //           }
-  //       }
+                `
+            }
+        }
